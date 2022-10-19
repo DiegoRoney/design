@@ -12,9 +12,14 @@
   ---link-color-hover: rgb(255, 136, 0);
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: var(--body-bg);
   color: var(---body-color);
+  
 }
 
 a {
@@ -25,6 +30,7 @@ a:hover {
   color: var(---link-color-hover);
 }
 
+/*! */
 .switch {
   position: absolute;
   margin-left: -9999px;
@@ -79,10 +85,61 @@ a:hover {
 .switch__container{
   position: absolute;
   top: 5;
-  right: 0;
-
-  height: 30px;
-  display: flex;
-  justify-content: flex-end;
+  right: 2%;  
   
 }
+/*! */
+   
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+  background-size: cover !important;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url("../img/banner1.png") no-repeat center center scroll;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  color: #eee;
+  font-size: 11vmin;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 40px;
+}
+    
+      
+button {
+  background: #098191;
+  transition: background ease .25s;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+  
+}
+button:hover {
+  background: #63b6b8
+}
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+    
+
+      
+
+    
