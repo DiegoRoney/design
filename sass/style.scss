@@ -1,0 +1,31 @@
+  
+  :root {
+     --body-bg: #fafafa; 
+     ---body-color: #555;
+     ---link-color: #222;
+     ---link-color-hover: rgb(255, 61, 61);
+  }
+  .dark-mode:root{
+      --body-bg: #1f1f1f; 
+      ---body-color: rgb(129, 129, 129);
+      ---link-color: rgb(201, 201, 201);
+      ---link-color-hover: rgb(255, 136, 0);
+  }
+  
+  body {
+    
+    color: var(---body-color); 
+  
+  
+  }
+  
+  a { 
+    text-decoration: none; 
+    color: var(---link-color);
+  
+    &:hover{
+      color: var(---link-color-hover);
+    }
+    
+  }
+  
