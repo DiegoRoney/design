@@ -1,44 +1,52 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 
 :root {
-  --body-bg: #F2F2F2;
+  --body-bg: #f2f2f2;
   ---cor-texto: #262626;
-  ---body-color: #A6A6A6;
-  ---link-color: #B9BF0F;
-  ---link-color-hover: #D2D904;
+  ---body-color: #a6a6a6;
+  ---link-color: #b9bf0f;
+  ---link-color-hover: #d2d904;
 
   ---destaque: #262626;
-  ---nav-bk: #B9BF0F;
+  ---nav-bk: #b9bf0f;
 }
 
 .dark-mode:root {
   --body-bg: #262626;
-  ---cor-texto: #F2F2F2;
-  ---body-color: #A6A6A6;
-  ---link-color: #D2D904;
-  ---link-color-hover: #B9BF0F; 
+  ---cor-texto: #f2f2f2;
+  ---body-color: #a6a6a6;
+  ---link-color: #d2d904;
+  ---link-color-hover: #b9bf0f;
 
-  ---destaque: #B9BF0F;
+  ---destaque: #b9bf0f;
   ---nav-bk: #1f1f1f;
 }
 
 /* Color Theme Swatches in Hex */
-.Type_Collection-1-hex { color: #D2D904; }
-.Type_Collection-2-hex { color: #B9BF0F; }
-.Type_Collection-3-hex { color: #F2F2F2; }
-.Type_Collection-4-hex { color: #A6A6A6; }
-.Type_Collection-5-hex { color: #262626; }
-
+.Type_Collection-1-hex {
+  color: #d2d904;
+}
+.Type_Collection-2-hex {
+  color: #b9bf0f;
+}
+.Type_Collection-3-hex {
+  color: #f2f2f2;
+}
+.Type_Collection-4-hex {
+  color: #a6a6a6;
+}
+.Type_Collection-5-hex {
+  color: #262626;
+}
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 nav ul li {
-  display: inline-block
+  display: inline-block;
 }
 
 nav ul li,
@@ -55,8 +63,7 @@ li {
 a,
 a:hover,
 nav ul li a {
-  text-decoration: none
-  var(---link-color-hover);
+  text-decoration: none var(---link-color-hover);
 }
 
 html {
@@ -64,7 +71,7 @@ html {
 }
 
 body {
-  padding-top: 0;  
+  padding-top: 0;
 }
 
 #main-sobre {
@@ -72,27 +79,24 @@ body {
   font-size: larger;
 }
 
-@media screen and (max-width:967px) {
-  
+@media screen and (max-width: 967px) {
 }
 
-@media screen and (min-width:968px) {
-  
+@media screen and (min-width: 968px) {
 }
 
-@media screen and (min-width:1024px) {
-  
+@media screen and (min-width: 1024px) {
 }
-  
-h2{
-  font-family: "Dancing Script", cursive;   
+
+h2 {
+  font-family: "Dancing Script", cursive;
 }
 
 .header-section {
   width: 100%;
   height: 85vh;
   padding: 15px;
-  background: url(../imagens/working-at-desk.png)no-repeat center;
+  background: url(../imagens/working-at-desk.png) no-repeat center;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
@@ -120,7 +124,7 @@ h2{
   font-family: "Dancing Script", cursive;
 }
 
-.header-icon-dw svg{
+.header-icon-dw svg {
   color: var(---destaque);
   position: absolute;
   top: 78%;
@@ -137,7 +141,7 @@ h2{
   justify-content: center;
   font-size: 14px;
   padding: 5px;
-  transition: .2s;
+  transition: 0.2s;
   border-radius: 5px;
   width: 120px;
 }
@@ -155,8 +159,6 @@ h2{
   width: 300px;
 }
 
-
-
 .lead {
   font-size: 1.2rem;
   font-weight: 700;
@@ -166,7 +168,7 @@ h2{
 #menu {
   background-color: transparent !important;
   padding: 1.5rem 1rem;
-  transition: all 500ms linear
+  transition: all 500ms linear;
 }
 
 #menu.ativo {
@@ -197,7 +199,7 @@ h2{
 
 .cabeçalho-redes-icon {
   height: 40px;
-  padding: 5px;  
+  padding: 5px;
 }
 
 .cabeçalho-redes {
@@ -213,11 +215,11 @@ h2{
 
 .principal-ft {
   border-top: 5px solid rgba(20, 20, 20, 0.5);
-  background: url(../imagens/footer.jpg)no-repeat center;
+  background: url(../imagens/footer.jpg) no-repeat center;
   background-size: cover;
 
   font-family: Arial, Helvetica, sans-serif;
-  
+
   height: 100%;
   color: #e7e7e7;
   padding: 25px;
@@ -229,25 +231,25 @@ h2{
 
 .principal-ft a {
   color: var(---link-color);
-} 
+}
 
 .principal-ft a:hover {
   color: var(---link-color-hover);
-} 
+}
 
 .principal-ft img {
   width: 60px;
-  height: auto
+  height: auto;
 }
 
 .item-ft {
   flex: 1 1 150px;
-  align-content: flex-start
+  align-content: flex-start;
 }
 
 .item-ft img {
   width: 2em;
-  height: auto
+  height: auto;
 }
 
 .up svg {
@@ -255,7 +257,7 @@ h2{
   color: var(---destaque);
 }
 
-.photo-gallery {   
+.photo-gallery {
   background-color: var(--body-bg);
 }
 
@@ -264,39 +266,39 @@ h2{
 }
 
 .photo-gallery h2 {
-  font-weight: 700;  
+  font-weight: 700;
   padding-top: 40px;
   color: var(---destaque);
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .photo-gallery h2 {
     margin-bottom: 25px;
     padding-top: 25px;
-    font-size: 24px
+    font-size: 24px;
   }
 }
 
 .photo-gallery .intro {
   font-size: 16px;
   max-width: 500px;
-  margin: 0 auto 40px
+  margin: 0 auto 40px;
 }
 
 .photo-gallery .intro p {
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 .photo-gallery .photos {
-  padding-bottom: 20px
+  padding-bottom: 20px;
 }
 
 .photo-gallery .item {
-  padding-bottom: 30px
+  padding-bottom: 30px;
 }
 
-.footer{
-  background: url(../imagens/working-at-desk.jpg)no-repeat center;
+.footer {
+  background: url(../imagens/working-at-desk.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -313,7 +315,6 @@ h2{
   cursor: pointer;
   outline: none;
   user-select: none;
-  
 }
 
 .switch--shadow + label {
@@ -331,7 +332,7 @@ h2{
   top: 1px;
   left: 1px;
   bottom: 1px;
-  content: '';
+  content: "";
 }
 .switch--shadow + label:before {
   right: 1px;
