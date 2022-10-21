@@ -7,16 +7,16 @@
   ---body-color: #555;
   ---link-color: #222;
   ---link-color-hover: #ff014d;
-  ---nav-bk: rgb(32, 0, 2);
+  ---nav-bk: rgb(32, 0, 29);
 }
 
 .dark-mode:root {
   --body-bg: #1f1f1f;
-  ---cor-texto: rgb(194, 194, 194);
+  ---cor-texto: rgb(252, 252, 252);
   ---body-color: rgb(129, 129, 129);
   ---link-color: rgb(201, 201, 201);
   ---link-color-hover: rgb(255, 136, 0);
-  ---nav-bk: rgb(175, 0, 9);
+  ---nav-bk: rgb(53, 0, 3);
 } 
 
 /*
@@ -77,12 +77,12 @@ body {
 }
   
 h2{
-  font-family: "Dancing Script", cursive; 
+  font-family: "Dancing Script", cursive;   
 }
 
 .header-section {
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   padding: 15px;
   background: url(../imagens/working-at-desk.png)no-repeat center;
   background-size: cover;
@@ -114,7 +114,7 @@ h2{
 
 .header-icon-dw {
   position: absolute;
-  top: 90%;
+  top: 80%;
   right: 50%;
 }
 
@@ -255,7 +255,7 @@ h2{
 .photo-gallery h2 {
   font-weight: 700;  
   padding-top: 40px;
-  color: inherit
+  color: var(---cor-texto);
 }
 
 @media (max-width:767px) {
@@ -309,7 +309,7 @@ h2{
   padding: 2px;
   width: 40px;
   height: 20px;
-  background-color: #dddddd;
+  background-color: #dddddd2a;
   border-radius: 30px;
 }
 
@@ -324,19 +324,19 @@ h2{
 }
 .switch--shadow + label:before {
   right: 1px;
-  background-color: #f1f1f1;
+  background-color: #f1f1f159;
   border-radius: 30px;
   transition: all 0.4s;
 }
 .switch--shadow + label:after {
-  width: 22px;
-  background-color: #fff;
+  width: 18px;
+  background-color: rgb(255, 255, 255);
   border-radius: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.4s;
 }
 .switch--shadow:checked + label:before {
-  background-color: #500000;
+  background-color: #00000048;
 }
 .switch--shadow:checked + label:after {
   transform: translateX(20px);
