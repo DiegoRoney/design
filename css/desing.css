@@ -68,7 +68,7 @@ body {
   height: 100vh;
   padding: 15px;
   /*deixar a imagem aqui*/
-  background: url(../imagens/banner1.png) no-repeat center;
+  background: url(../imagens/working-at-desk.jpg) no-repeat center;
   background-size: cover;
 
   display: flex;
