@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 
+/*!--------- TEMA -------------*/
 :root {
   --body-bg: #f2f2f2;
   ---cor-texto: #262626;
@@ -8,7 +9,7 @@
   ---link-color-hover: #d2d904;
 
   ---destaque: #262626;
-  ---nav-bk: #b9bf0f;
+  ---nav-bk: #fd8700;
 }
 
 .dark-mode:root {
@@ -18,7 +19,7 @@
   ---link-color: #d2d904;
   ---link-color-hover: #b9bf0f;
 
-  ---destaque: #b9bf0f;
+  ---destaque: #fd8700;
   ---nav-bk: #1f1f1f;
 }
 
@@ -39,6 +40,7 @@
   color: #262626;
 }
 
+/*!---------- CONF ------------*/
 * {
   margin: 0;
   padding: 0;
@@ -74,11 +76,7 @@ body {
   padding-top: 0;
 }
 
-#main-sobre {
-  color: #000;
-  font-size: larger;
-}
-
+/*!-------------------- MIDIA ------------*/
 @media screen and (max-width: 967px) {
 }
 
@@ -92,20 +90,27 @@ h2 {
   font-family: "Dancing Script", cursive;
 }
 
+/*!--------------------- HEAD -------------*/
 .header-section {
   width: 100%;
   height: 85vh;
   padding: 15px;
-  background: url(../imagens/working-at-desk.png) no-repeat center;
+  background: url(../imagens/working2.jpg) no-repeat center;
   background-size: cover;
+
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: space-around;
+  justify-content: center;
+  
+  align-items: center;
+  align-content: flex-end;
+
+
+
 }
 
 .header-texto {
-  background-color: #863e9e1c;
+  /* background-color: #863e9e1c; */
   border-radius: 20px;
   justify-content: center;
   align-content: center;
@@ -115,7 +120,7 @@ h2 {
   padding: 20px;
   width: 400px;
   font-family: "Oswald", sans-serif;
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(6px); */
 }
 
 .header-texto h1 {
@@ -124,33 +129,19 @@ h2 {
   font-family: "Dancing Script", cursive;
 }
 
+.header-icon-dw {  
+  margin-top: 50px;
+  width: 100%; 
+  
+}
+
 .header-icon-dw svg {
-  color: var(---destaque);
+  color: var(---destaque);  
+  width: 100%;
   position: absolute;
   top: 78%;
-  right: 50%;
+  right: 0; 
   height: 50px;
-}
-
-.btn {
-  border: 1px solid rgb(255, 255, 255);
-  background: #ffae0000;
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  font-size: 14px;
-  padding: 5px;
-  transition: 0.2s;
-  border-radius: 5px;
-  width: 120px;
-}
-
-.btn:hover {
-  background: var(---destaque);
-  border: 0;
-  transform: translateY(-2px);
-  color: var(--body-bg);
 }
 
 .header-formulario {
@@ -160,9 +151,9 @@ h2 {
 }
 
 .lead {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #fff;
+  font-size: 1.2rem; 
+  color: var(--body-bg); 
+  
 }
 
 #menu {
@@ -213,6 +204,37 @@ h2 {
   align-content: center;
 }
 
+/*!------------------- BOTÕES ------------*/
+
+
+.btn {
+  border: 1px solid rgb(255, 255, 255);
+  background: #ffae0000;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  padding: 5px;
+  transition: 0.2s;
+  border-radius: 5px;
+  width: 120px;
+}
+
+
+.btn:hover {
+  background: var(---destaque);
+  border: 0;
+  transform: translateY(-2px);
+  color: var(--body-bg);
+}
+
+/*!-------------------- FOOTER ------------*/
+/* .footer {
+  background: url(../imagens/working-at-desk.jpg) no-repeat center;
+  background-size: cover;
+} */
+
 .principal-ft {
   border-top: 5px solid rgba(20, 20, 20, 0.5);
   background: url(../imagens/footer.jpg) no-repeat center;
@@ -257,6 +279,8 @@ h2 {
   color: var(---destaque);
 }
 
+/*? ------------------ GALERIA -----------------------*/
+
 .photo-gallery {
   background-color: var(--body-bg);
 }
@@ -297,12 +321,7 @@ h2 {
   padding-bottom: 30px;
 }
 
-.footer {
-  background: url(../imagens/working-at-desk.jpg) no-repeat center;
-  background-size: cover;
-}
-
-/*?---------------------------------*/
+/*?------------ BOTAO TROCA DE TEMA---------------------*/
 .switch {
   position: absolute;
   margin-left: -9999px;
