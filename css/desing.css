@@ -1,4 +1,27 @@
-@import url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap);
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+:root {
+  --body-bg: #ffffff;
+  ---cor-texto: rgb(0, 0, 0);
+  ---body-color: #555;
+  ---link-color: #222;
+  ---link-color-hover: #ff014d;
+  ---nav-bk: rgb(32, 0, 2);
+}
+
+.dark-mode:root {
+  --body-bg: #1f1f1f;
+  ---cor-texto: rgb(194, 194, 194);
+  ---body-color: rgb(129, 129, 129);
+  ---link-color: rgb(201, 201, 201);
+  ---link-color-hover: rgb(255, 136, 0);
+  ---nav-bk: rgb(175, 0, 9);
+} 
+
+/*
+color: var(---link-color-hover);
+*/
 
 * {
   margin: 0;
@@ -12,11 +35,11 @@ nav ul li {
 
 nav ul li,
 nav ul li a {
-  color: #fff
+  color: var(---link-color);
 }
 
 li {
-  list-style-type: none
+  list-style-type: none;
 }
 
 *,
@@ -25,49 +48,48 @@ a,
 a:hover,
 nav ul li a {
   text-decoration: none
+  var(---link-color-hover);
 }
 
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 
 body {
-  padding-top: 0
+  padding-top: 0;  
 }
 
 #main-sobre {
   color: #000;
-  font-size: larger
+  font-size: larger;
 }
 
 @media screen and (max-width:967px) {
-  #main-sobre {
-    margin-top: -600px
-  }
+  
 }
 
 @media screen and (min-width:968px) {
-  #main-sobre {
-    margin-top: -60px
-  }
+  
 }
 
 @media screen and (min-width:1024px) {
-  #main-sobre {
-    margin-top: -800px
-  }
+  
+}
+  
+h2{
+  font-family: "Dancing Script", cursive; 
 }
 
 .header-section {
   width: 100%;
   height: 100vh;
   padding: 15px;
-  background: url(../imagens/working-at-desk.jpg)no-repeat center;
+  background: url(../imagens/working-at-desk.png)no-repeat center;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-content: space-around
+  align-content: space-around;
 }
 
 .header-texto {
@@ -81,23 +103,23 @@ body {
   padding: 20px;
   width: 400px;
   font-family: "Oswald", sans-serif;
-  backdrop-filter: blur(5px)
+  backdrop-filter: blur(5px);
 }
 
 .header-texto h1 {
   font-size: 90px;
   color: #fff;
-  font-family: "Dancing Script", cursive
+  font-family: "Dancing Script", cursive;
 }
 
 .header-icon-dw {
   position: absolute;
   top: 90%;
-  right: 50%
+  right: 50%;
 }
 
 .btn {
-  border: 1px solid #fff;
+  border: 1px solid rgb(255, 255, 255);
   background: #ffae0000;
   color: #fff;
   cursor: pointer;
@@ -107,7 +129,7 @@ body {
   padding: 5px;
   transition: .2s;
   border-radius: 5px;
-  width: 120px
+  width: 120px;
 }
 
 .btn:hover {
@@ -120,17 +142,15 @@ body {
 .header-formulario {
   padding: 10px;
   display: flex;
-  width: 300px
+  width: 300px;
 }
 
-section {
-  margin-top: 50px
-}
+
 
 .lead {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff
+  color: #fff;
 }
 
 #menu {
@@ -140,8 +160,8 @@ section {
 }
 
 #menu.ativo {
-  background-color: #000 !important;
-  padding: 0 1rem
+  background-color: var(---nav-bk) !important;
+  padding: 0 1rem;
 }
 
 .cabeçalho {
@@ -150,29 +170,35 @@ section {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 5px
+  padding: 5px;
 }
 
 .cabeçalho-imagem img {
   height: 30px;
-  margin-right: 10px
+  margin-right: 10px;
 }
 
 .cabeçalho-texto {
   color: #fff;
   font-size: 1.5rem;
   font-weight: 700;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .cabeçalho-redes-icon {
   height: 40px;
-  padding: 5px
+  padding: 5px;
 }
 
 .cabeçalho-redes {
   color: #fff;
-  flex-direction: row
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-items: center;
+  align-content: center;
 }
 
 .principal-ft {
@@ -188,16 +214,16 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  justify-content: space-around
+  justify-content: space-around;
 }
 
 .principal-ft a {
-  color: #ccc
-}
+  color: var(---link-color);
+} 
 
 .principal-ft a:hover {
-  color: #ff6106
-}
+  color: var(---link-color-hover);
+} 
 
 .principal-ft img {
   width: 60px;
@@ -218,19 +244,16 @@ section {
   width: 40px
 }
 
-.photo-gallery {
-  margin-top: 150px;
-  color: #313437;
-  background-color: #fff
+.photo-gallery {   
+  background-color: var(--body-bg);
 }
 
 .photo-gallery p {
-  color: #7d8285
+  color: var(---cor-texto);
 }
 
 .photo-gallery h2 {
-  font-weight: 700;
-  margin-bottom: 40px;
+  font-weight: 700;  
   padding-top: 40px;
   color: inherit
 }
@@ -265,3 +288,62 @@ section {
   background: url(../imagens/working-at-desk.jpg)no-repeat center;
   background-size: cover;
 }
+
+/*?---------------------------------*/
+.switch {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+
+.switch + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  
+}
+
+.switch--shadow + label {
+  padding: 2px;
+  width: 40px;
+  height: 20px;
+  background-color: #dddddd;
+  border-radius: 30px;
+}
+
+.switch--shadow + label:before,
+.switch--shadow + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: '';
+}
+.switch--shadow + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  transition: all 0.4s;
+}
+.switch--shadow + label:after {
+  width: 22px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+.switch--shadow:checked + label:before {
+  background-color: #500000;
+}
+.switch--shadow:checked + label:after {
+  transform: translateX(20px);
+}
+/* .switch__container{
+  position: absolute;
+  top: 5;
+  right: 2%;  
+  
+} */
