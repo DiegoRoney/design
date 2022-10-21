@@ -2,26 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 :root {
-  --body-bg: #ffffff;
-  ---cor-texto: rgb(0, 0, 0);
-  ---body-color: #555;
-  ---link-color: #222;
-  ---link-color-hover: #ff014d;
-  ---nav-bk: rgb(32, 0, 29);
+  --body-bg: #F2F2F2;
+  ---cor-texto: #262626;
+  ---body-color: #A6A6A6;
+  ---link-color: #B9BF0F;
+  ---link-color-hover: #D2D904;
+
+  ---destaque: #262626;
+  ---nav-bk: #B9BF0F;
 }
 
 .dark-mode:root {
-  --body-bg: #1f1f1f;
-  ---cor-texto: rgb(252, 252, 252);
-  ---body-color: rgb(129, 129, 129);
-  ---link-color: rgb(201, 201, 201);
-  ---link-color-hover: rgb(255, 136, 0);
-  ---nav-bk: rgb(53, 0, 3);
-} 
+  --body-bg: #262626;
+  ---cor-texto: #F2F2F2;
+  ---body-color: #A6A6A6;
+  ---link-color: #D2D904;
+  ---link-color-hover: #B9BF0F; 
 
-/*
-color: var(---link-color-hover);
-*/
+  ---destaque: #B9BF0F;
+  ---nav-bk: #1f1f1f;
+}
+
+/* Color Theme Swatches in Hex */
+.Type_Collection-1-hex { color: #D2D904; }
+.Type_Collection-2-hex { color: #B9BF0F; }
+.Type_Collection-3-hex { color: #F2F2F2; }
+.Type_Collection-4-hex { color: #A6A6A6; }
+.Type_Collection-5-hex { color: #262626; }
+
 
 * {
   margin: 0;
@@ -108,14 +116,16 @@ h2{
 
 .header-texto h1 {
   font-size: 90px;
-  color: #fff;
+  color: var(---destaque);
   font-family: "Dancing Script", cursive;
 }
 
-.header-icon-dw {
+.header-icon-dw svg{
+  color: var(---destaque);
   position: absolute;
-  top: 80%;
+  top: 78%;
   right: 50%;
+  height: 50px;
 }
 
 .btn {
@@ -133,10 +143,10 @@ h2{
 }
 
 .btn:hover {
-  background: #ff014d;
+  background: var(---destaque);
   border: 0;
   transform: translateY(-2px);
-  color: #fff
+  color: var(--body-bg);
 }
 
 .header-formulario {
@@ -187,7 +197,7 @@ h2{
 
 .cabeçalho-redes-icon {
   height: 40px;
-  padding: 5px;
+  padding: 5px;  
 }
 
 .cabeçalho-redes {
@@ -240,8 +250,9 @@ h2{
   height: auto
 }
 
-.up img {
-  width: 40px
+.up svg {
+  width: 40px;
+  color: var(---destaque);
 }
 
 .photo-gallery {   
@@ -255,7 +266,7 @@ h2{
 .photo-gallery h2 {
   font-weight: 700;  
   padding-top: 40px;
-  color: var(---cor-texto);
+  color: var(---destaque);
 }
 
 @media (max-width:767px) {
@@ -309,7 +320,7 @@ h2{
   padding: 2px;
   width: 40px;
   height: 20px;
-  background-color: #dddddd2a;
+  background-color: #999999c2;
   border-radius: 30px;
 }
 
@@ -324,7 +335,7 @@ h2{
 }
 .switch--shadow + label:before {
   right: 1px;
-  background-color: #f1f1f159;
+  background-color: #f1f1f19c;
   border-radius: 30px;
   transition: all 0.4s;
 }
@@ -336,7 +347,7 @@ h2{
   transition: all 0.4s;
 }
 .switch--shadow:checked + label:before {
-  background-color: #00000048;
+  background-color: var(---destaque);
 }
 .switch--shadow:checked + label:after {
   transform: translateX(20px);

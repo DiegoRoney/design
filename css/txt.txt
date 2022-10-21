@@ -1,0 +1,21 @@
+:root {
+  --body-bg: #ffffff;
+  ---cor-texto: rgb(0, 0, 0);
+  ---body-color: #555;
+
+  ---destaque: #750000;
+  ---link-color: #222;
+  ---link-color-hover: #ff014d;
+  ---nav-bk: rgb(0, 0, 0);
+}
+
+.dark-mode:root {
+  --body-bg: #1f1f1f;
+  ---cor-texto: rgb(252, 252, 252);
+  ---body-color: rgb(129, 129, 129);
+
+  ---destaque: #ff014d;
+  ---link-color: rgb(201, 201, 201);
+  ---link-color-hover: rgb(255, 136, 0);
+  ---nav-bk: rgb(51, 51, 51);
+} 
