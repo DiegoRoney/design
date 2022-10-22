@@ -9,7 +9,7 @@
   ---link-color-hover: #d2d904;
 
   ---destaque: #262626;
-  ---nav-bk: #fd8700;
+  ---nav-bk: #b9bf0f;
 }
 
 .dark-mode:root {
@@ -19,7 +19,7 @@
   ---link-color: #d2d904;
   ---link-color-hover: #b9bf0f;
 
-  ---destaque: #fd8700;
+  ---destaque: #d2d904;
   ---nav-bk: #1f1f1f;
 }
 
@@ -78,12 +78,21 @@ body {
 
 /*!-------------------- MIDIA ------------*/
 @media screen and (max-width: 967px) {
+  .header-texto h1{
+    font-size: 100px;
+  }
 }
 
 @media screen and (min-width: 968px) {
+  .header-texto h1{
+    font-size: 150px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .header-texto h1{
+    font-size: 150px;
+  }
 }
 
 h2 {
@@ -105,8 +114,6 @@ h2 {
   align-items: center;
   align-content: flex-end;
 
-
-
 }
 
 .header-texto {
@@ -120,17 +127,18 @@ h2 {
   padding: 20px;
   width: 400px;
   font-family: "Oswald", sans-serif;
-  /* backdrop-filter: blur(6px); */
+  /* backdrop-filter: blur(3px); */
 }
 
 .header-texto h1 {
-  font-size: 90px;
+  /* font-size: 90px; */
   color: var(---destaque);
   font-family: "Dancing Script", cursive;
+  text-shadow: 0.02em 0.02em 0.01em var(--body-bg);
 }
 
 .header-icon-dw {  
-  margin-top: 50px;
+  margin-top: 30px;
   width: 100%; 
   
 }
