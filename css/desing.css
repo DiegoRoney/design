@@ -11,7 +11,7 @@
   ---destaque: #262626;
   ---nav-bk: #b9bf0f;
 
-  ---img-footer: url('https://wallpaperaccess.com/full/58695.png');
+  ---img-footer: url('../imagens/footer-lg.jpg');
 
   
 }
@@ -26,7 +26,7 @@
   ---destaque: #d2d904;
   ---nav-bk: #1f1f1f;
 
-  ---img-footer: url('https://img.freepik.com/vetores-gratis/hexagono-de-fundo-abstrato-com-textura-preta_206725-413.jpg?w=1380&t=st=1666538036~exp=1666538636~hmac=9ce68d02c55f37c18dd8e203fb44f909f85fbd4430ce45e858dab81d05ce29fd');
+  ---img-footer: url('../imagens/footer-bk.jpg');
 }
 
 /* Color Theme Swatches in Hex */
