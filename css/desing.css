@@ -70,6 +70,7 @@ nav ul li a {
 
 html {
   scroll-behavior: smooth;
+  
 }
 
 body {
@@ -128,13 +129,16 @@ h2 {
   width: 400px;
   font-family: "Oswald", sans-serif;
   /* backdrop-filter: blur(3px); */
+  
 }
 
-.header-texto h1 {
+.header-texto h1 { 
+
   /* font-size: 90px; */
-  color: var(---destaque);
+   color: var(---destaque);
   font-family: "Dancing Script", cursive;
   text-shadow: 0.02em 0.02em 0.01em var(--body-bg);
+  
 }
 
 .header-icon-dw {  
@@ -160,8 +164,8 @@ h2 {
 }
 
 .lead {
-  font-size: 1.2rem; 
-  color: var(--body-bg); 
+  font-size: 1.3rem; 
+  color: black; 
   
 }
 
@@ -238,6 +242,10 @@ h2 {
   color: var(--body-bg);
 }
 
+hr{
+  
+  border-top: 1px solid var(---destaque);
+}
 /*!-------------------- FOOTER ------------*/
 /* .footer {
   background: url(../imagens/working-at-desk.jpg) no-repeat center;
@@ -245,9 +253,9 @@ h2 {
 } */
 
 .principal-ft {
-  border-top: 5px solid rgba(20, 20, 20, 0.5);
+  /* border-top: 5px solid rgba(20, 20, 20, 0.5);
   background: url(../imagens/footer.jpg) no-repeat center;
-  background-size: cover;
+  background-size: cover; */
 
   font-family: Arial, Helvetica, sans-serif;
 
@@ -387,3 +395,41 @@ h2 {
   right: 2%;  
   
 } */
+
+footer{
+	margin:0;
+	padding:0;
+	
+    background: #303030 url('https://wallpaperaccess.com/full/58695.png') repeat 0 0;
+	-webkit-animation: 10s linear 0s normal none infinite animate;
+	-moz-animation: 10s linear 0s normal none infinite animate;
+	-ms-animation: 10s linear 0s normal none infinite animate;
+	-o-animation: 10s linear 0s normal none infinite animate;
+	animation: 20s linear 0s normal none infinite animate;
+ 
+}
+ 
+@-webkit-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 200px 0;}
+}
+ 
+@-moz-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 200px 0;}
+}
+ 
+@-ms-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 200px 0;}
+}
+ 
+@-o-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 200px 0;}
+}
+ 
+@keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 200px 0;}
+}
