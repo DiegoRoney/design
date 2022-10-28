@@ -17,7 +17,7 @@
 }
 
 .dark-mode:root {
-  --body-bg: #090909;
+  --body-bg: #1d1d1d;
   ---cor-texto: #f2f2f2;
   ---body-color: #a6a6a6;
   ---link-color: #d2d904;
@@ -26,7 +26,7 @@
   ---destaque: #d2d904;
   ---nav-bk: #1f1f1f;
 
-  ---img-footer: url('../imagens/footer-bk.jpg');
+  ---img-footer: url('../imagens/footer.jpg');
 }
 
 /* Color Theme Swatches in Hex */
