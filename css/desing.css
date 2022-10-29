@@ -13,6 +13,8 @@
 
   ---img-footer: url('../imagens/footer-lg.jpg');
 
+  ---on: url('../icons/on.png');
+  ---off: url('../icons/off.png');
 
 }
 
@@ -214,7 +216,7 @@ h2 {
 
 .cabeçalho-redes {
   color: #fff;
-  gap: 15px;
+  gap: 10px;
   display: flex;
   flex-direction: row;
 
@@ -234,10 +236,11 @@ h2 {
   display: flex;
   justify-content: center;
   font-size: 14px;
-  padding: 5px;
+  padding: 2px;
   transition: 0.2s;
   border-radius: 5px;
-  width: 120px;
+  width: 100px;
+  height: 25px;
 }
 
 
@@ -422,7 +425,7 @@ footer{
 
 }
 
-/* @-webkit-keyframes animate {
+ @-webkit-keyframes animate {
 	from {background-position:0 0;}
 	to {background-position: 200px 0;}
 }
@@ -445,11 +448,12 @@ footer{
 @keyframes animate {
 	from {background-position:0 0;}
 	to {background-position: 200px 0;}
-} */
+} 
 
 .switch-holder {
+ 
   display: flex;
-  padding: 10px 20px;
+  padding: 1px 0px;
   border-radius: 10px;
   /* box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.7),
     10px 10px 10px rgba(0, 0, 0, 0.2),
@@ -459,11 +463,14 @@ footer{
   align-items: center;
   justify-content: center;
 }
+span{
+  font-family: "Dancing Script", cursive;
+}
 .switch-label {
-  padding: 0 10px 0 5px;
+  padding: 0 5px 0 5px;
 }
 .switch-label i {
-  margin-right: 5px;
+  margin-right: 0px;
 }
 .switch-toggle {
   height: 18px;
@@ -482,12 +489,12 @@ footer{
   margin: 0;
   cursor: pointer;
   box-shadow: inset -4px -4px 8px rgba(20, 20, 20, 0.6),
-    inset 0px 10px 10px rgba(0, 0, 0, 0.25);
+    inset 0px 10px 10px rgba(0, 0, 0, 0.849);
 }
 .switch-toggle input[type="checkbox"] + label::before {
   position: absolute;
-  content: "OFF";
-  color:var(---destaque);
+  content: 'OFF';
+  color:black;
   font-size: 13px;
   text-align: center;
   line-height: 20px;
@@ -502,9 +509,9 @@ footer{
   transition: 0.3s ease-in-out;
 }
 .switch-toggle input[type="checkbox"]:checked + label::before {
-  left: 40%;
+  left: 40%;  
   content: "ON";
-  color:var(---destaque);
+  color:var(---nav-bk);
   background-color: var(---link-color-hover);
-  /* box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.5), 3px 3px 5px #00b33c; */
+   box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.63), 1px 1px 3px #d2d904; 
 }
