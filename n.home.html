@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Designer Web" />
+
+    <!-- jQuery -->
+    
+    <link href="icons/icon-diego.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <!---->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/desing.css" />
+    <!-- <link rel="stylesheet" href="album.css" /> -->
+
+    
+    <!---->
+    <title>Design</title>
+  </head>
+
+  <body>
+    <script>
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 40) {
+          $("#menu").addClass("ativo");
+        } else {
+          $("#menu").removeClass("ativo");
+        }
+      });
+    </script>
+
+    <header id="menu" class="cabeçalho fixed-top">
+      <div>
+        <a href="#"
+          ><img
+            id="cabeçalho-redes-icon"
+            class="cabeçalho-redes-icon"
+            src="icons/diego-design-w.png"
+          />
+          <!-- <h2 class="cabeçalho-texto navbar-brand">DIEGO</h2> -->
+        </a>
+      </div>
+
+      <nav class="cabeçalho-redes">
+        <!-- <a href="https://diegoroney.github.io/portfolio/">
+        <button class="btn">PORTFÓLIO</button>
+      </a> -->
+
+        <div class="switch-holder">
+          <div class="switch-label">
+            <i class="bi bi-bluetooth"></i>
+            <span>Dark Mode</span>
+          </div>
+          <div class="switch-toggle">
+            <input type="checkbox" id="dark" />
+            <label for="dark"></label>
+          </div>
+        </div>
+
+        <!-- <div class="switch__container">
+        <input id="switch-shadow" class="switch switch--shadow" type="checkbox" />
+        <label for="switch-shadow"></label>
+      </div> -->
+      </nav>
+    </header>
+    <!--nav do header-->
+    <div class="header-section">
+      <!-- banner principal -->
+      <div class="header-texto">
+        <div class="container text-center">
+          <h1>Design</h1>
+          <p class="lead">Conheça um pouco do meu trabalho</p>
+        </div>
+      </div>
+      <div class="header-icon-dw">
+        <!--? icon down -->
+        <a href="#galeria">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!--! GALERIA DE IMAGENS -->
+    <div class="galeria-nav">
+        <ul>
+          <li><a href="#esportes">Esportes</a></li>
+          <li><a href="#religioso">Religioso</a></li>
+          <li><a href="#personalizadas">Personalizadas</a></li>
+          <li><a href="#redes-sociais">Redes sociais</a></li>
+        </ul>
+      </div>
+      
+      <!-- Seção de Esportes -->
+      <div id="esportes">
+        <h2>Esportes</h2>
+        <p>Conteúdo da seção de esportes.</p>
+      </div>
+      
+      <!-- Seção de Religioso -->
+      <div id="religioso">
+        <h2>Religioso</h2>
+        <p>Conteúdo da seção religiosa.</p>
+      </div>
+      
+      <!-- Seção de Personalizadas -->
+      <div id="personalizadas">
+        <h2>Personalizadas</h2>
+        <p>Conteúdo da seção personalizada.</p>
+      </div>
+      
+      <!-- Seção de Redes Sociais -->
+      <div id="redes-sociais">
+        <h2>Redes Sociais</h2>
+        <p>Conteúdo da seção de redes sociais.</p>
+      </div>
+    <!-- GALERIA DE IMAGENS -->
+
+    <!--? Footer -->
+    <footer class="principal-ft">
+      <div class="item-ft">
+        <h3>DIEGO</h3>
+        <a href="https://diegoroney.github.io/portfolio/">
+          <button class="btn">PORTFÓLIO</button>
+        </a>
+        <a href="https://diegoroney.github.io/portfolio/"
+          >© 2025 Copyright: DIEGOR</a
+        >
+      </div>
+
+      <div class="up">
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <!--? Footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>'
+        );
+    </script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
