@@ -35,15 +35,19 @@
 .Type_Collection-1-hex {
   color: #d2d904;
 }
+
 .Type_Collection-2-hex {
   color: #b9bf0f;
 }
+
 .Type_Collection-3-hex {
   color: #f2f2f2;
 }
+
 .Type_Collection-4-hex {
   color: #a6a6a6;
 }
+
 .Type_Collection-5-hex {
   color: #262626;
 }
@@ -87,28 +91,44 @@ body {
 
 /*!-------------------- MIDIA ------------*/
 @media screen and (max-width: 967px) {
-  .header-texto h1{
+  .header-texto h1 {
     font-size: 100px;
   }
 }
 
 @media screen and (min-width: 968px) {
-  .header-texto h1{
+  .header-texto h1 {
     font-size: 150px;
+  }
+
+  .carousel-item {
+    width: 50%;
+
+    align-items: center;
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .header-texto h1{
+  .header-texto h1 {
     font-size: 150px;
   }
+
+  .carousel-item {
+    width: 50%;
+    align-items: center;
+
+    justify-content: center;
+
+  }
 }
+
 
 h2 {
   font-family: "Dancing Script", cursive;
 }
 
-/*!--------------------- HEAD -------------*/
+/*!--------------------- hero principal -------------*/
 .header-section {
   width: 100%;
   height: 85vh;
@@ -124,6 +144,29 @@ h2 {
   align-content: flex-end;
 
 }
+
+/*!--------------------- hero paginas secundarias ----mudar os v div---------*/
+.header-section-categorias {
+  width: 100%;
+  height: 55vh;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+
+}
+.construcao {
+  background: url(../imagens/CONSTRUCAO.png) no-repeat center;
+  background-size: cover;
+}
+.esportes {
+  background: url(../imagens/ESPORTIVAS.jpg) no-repeat center;
+  background-size: cover;
+}
+
+
 
 .header-texto {
   /* background-color: #863e9e1c; */
@@ -143,7 +186,7 @@ h2 {
 .header-texto h1 {
 
   /* font-size: 90px; */
-   color: var(---destaque);
+  color: var(---destaque);
   font-family: "Dancing Script", cursive;
   text-shadow: 0.02em 0.02em 0.01em var(--body-bg);
 
@@ -166,6 +209,7 @@ h2 {
 }
 
 .header-formulario {
+  /* sem uso*/
   padding: 10px;
   display: flex;
   width: 300px;
@@ -251,10 +295,11 @@ h2 {
   color: var(--body-bg);
 }
 
-hr{
+hr {
 
   border-top: 1px solid var(---destaque);
 }
+
 /*!-------------------- FOOTER ------------*/
 /* .footer {
   background: url(../imagens/working-at-desk.jpg) no-repeat center;
@@ -334,9 +379,10 @@ hr{
   justify-content: center;
   gap: 15px;
   padding-top: 55px;
-  
+
   margin-bottom: 50px;
-  flex-wrap: wrap; /* Quebra linha se faltar espaço */
+  flex-wrap: wrap;
+  /* Quebra linha se faltar espaço */
 }
 
 .photo-gallery .intro .links a {
@@ -371,7 +417,7 @@ hr{
   visibility: hidden;
 }
 
-.switch + label {
+.switch+label {
   display: block;
   position: relative;
   cursor: pointer;
@@ -379,7 +425,7 @@ hr{
   user-select: none;
 }
 
-.switch--shadow + label {
+.switch--shadow+label {
   padding: 2px;
   width: 40px;
   height: 20px;
@@ -387,8 +433,8 @@ hr{
   border-radius: 30px;
 }
 
-.switch--shadow + label:before,
-.switch--shadow + label:after {
+.switch--shadow+label:before,
+.switch--shadow+label:after {
   display: block;
   position: absolute;
   top: 1px;
@@ -396,7 +442,8 @@ hr{
   bottom: 1px;
   content: "";
 }
-.switch--shadow + label:before {
+
+.switch--shadow+label:before {
   right: 1px;
   background-color: #f1f1f19c;
   border-radius: 30px;
@@ -404,7 +451,8 @@ hr{
 
 
 }
-.switch--shadow + label:after {
+
+.switch--shadow+label:after {
   width: 18px;
   background-color: rgb(255, 255, 255);
   border-radius: 100%;
@@ -414,14 +462,17 @@ hr{
   font-size: 11px;
   color: #1d1d1d;
 }
-.switch--shadow:checked + label:before {
+
+.switch--shadow:checked+label:before {
   background-color: var(---destaque);
 
 }
-.switch--shadow:checked + label:after {
+
+.switch--shadow:checked+label:after {
   transform: translateX(20px);
 
 }
+
 /* .switch__container{
   position: absolute;
   top: 5;
@@ -429,46 +480,71 @@ hr{
 
 } */
 
-footer{
-	margin:0;
-	padding:0;
+footer {
+  margin: 0;
+  padding: 0;
 
-    background: var(---img-footer) repeat 0 0;
-	-webkit-animation: 10s linear 0s normal none infinite animate;
-	-moz-animation: 10s linear 0s normal none infinite animate;
-	-ms-animation: 10s linear 0s normal none infinite animate;
-	-o-animation: 10s linear 0s normal none infinite animate;
-	animation: 20s linear 0s normal none infinite animate;
+  background: var(---img-footer) repeat 0 0;
+  -webkit-animation: 10s linear 0s normal none infinite animate;
+  -moz-animation: 10s linear 0s normal none infinite animate;
+  -ms-animation: 10s linear 0s normal none infinite animate;
+  -o-animation: 10s linear 0s normal none infinite animate;
+  animation: 20s linear 0s normal none infinite animate;
 
 }
 
- @-webkit-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 200px 0;}
+@-webkit-keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 200px 0;
+  }
 }
 
 @-moz-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 200px 0;}
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 200px 0;
+  }
 }
 
 @-ms-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 200px 0;}
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 200px 0;
+  }
 }
 
 @-o-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 200px 0;}
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 200px 0;
+  }
 }
 
 @keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 200px 0;}
-} 
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 200px 0;
+  }
+}
 
 .switch-holder {
- 
+
   display: flex;
   padding: 1px 0px;
   border-radius: 10px;
@@ -480,24 +556,30 @@ footer{
   align-items: center;
   justify-content: center;
 }
-span{
+
+span {
   font-family: "Dancing Script", cursive;
 }
+
 .switch-label {
   padding: 0 5px 0 5px;
 }
+
 .switch-label i {
   margin-right: 0px;
 }
+
 .switch-toggle {
   height: 18px;
 }
+
 .switch-toggle input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   z-index: -2;
 }
-.switch-toggle input[type="checkbox"] + label {
+
+.switch-toggle input[type="checkbox"]+label {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -508,10 +590,11 @@ span{
   box-shadow: inset -4px -4px 8px rgba(20, 20, 20, 0.6),
     inset 0px 10px 10px rgba(0, 0, 0, 0.849);
 }
-.switch-toggle input[type="checkbox"] + label::before {
+
+.switch-toggle input[type="checkbox"]+label::before {
   position: absolute;
   content: 'OFF';
-  color:black;
+  color: black;
   font-size: 13px;
   text-align: center;
   line-height: 20px;
@@ -525,12 +608,13 @@ span{
     3px 3px 5px rgba(0, 0, 0, 0.25); */
   transition: 0.3s ease-in-out;
 }
-.switch-toggle input[type="checkbox"]:checked + label::before {
-  left: 40%;  
+
+.switch-toggle input[type="checkbox"]:checked+label::before {
+  left: 40%;
   content: "ON";
-  color:var(---nav-bk);
+  color: var(---nav-bk);
   background-color: var(---link-color-hover);
-   box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.63), 1px 1px 3px #d2d904; 
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.63), 1px 1px 3px #d2d904;
 }
 
 
@@ -570,3 +654,6 @@ span{
   border-radius: 5px;
 }
 
+
+
+/*------------------------*/

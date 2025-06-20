@@ -14,6 +14,9 @@ Próximo ->
     Redes sociais
 
     hero -> com tema banner
+
+    feito: paginas e rotas
+    fazer: subir imgs e twbr
    
    
 Home (Página inicial) → Com apresentação rápida + destaque da logo.
