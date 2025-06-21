@@ -91,10 +91,12 @@ nav ul li a {
 html {
   scroll-behavior: smooth;
   font-family: "Josefin Sans";
+  animation: fadeInDown 1s ease-out;
 }
 
 body {
   padding-top: 0;
+  
 }
 
 /*!-------------------- MIDIA ------------*/
